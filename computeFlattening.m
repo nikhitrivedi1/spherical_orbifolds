@@ -12,7 +12,7 @@ M=[L A'; A sparse(n_eq,n_eq)];
 rhs=[zeros(n_vars,1); b];
 warning('off','MATLAB:nearlySingularMatrix')
 
-% Use Tekhonov Regularization for calculating x_lambda
+% Use Tikhonov Regularization for calculating x_lambda
 % Reference: Tikhonov, A. N., & Arsenin, V. Y. (1977). Solutions of Ill-Posed Problems. Winston & Sons.
 % addresses rank deficiency in the original M matrix
 % specify alpha: 
